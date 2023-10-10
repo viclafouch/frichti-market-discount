@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "vercel deploy --prod",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
