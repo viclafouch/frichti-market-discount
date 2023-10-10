@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        yellow: '#faf190'
+        yellow: '#faf190',
+        blue: '#1336b9'
       },
       backgroundImage: {
         'frichti-background': "url('/frichti-background.webp')"
