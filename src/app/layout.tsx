@@ -20,16 +20,16 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           role="presentation"
         >
           <p aria-hidden="true" className="text-center max-w-2xl mx-auto">
-            Ce site Web n&apos;est pas affilié à Frichti / La Belle vie.
+            Ce site Web n&apos;est pas affilié à New Frichti SAS.
           </p>
         </header>
         <main className="flex-1 flex flex-col min-h-screen">{children}</main>
         <footer className="p-4 bg-gray-100">
           <p className="text-center max-w-2xl mx-auto">
             Remise gratuite uniquement valable avec le lien ci-dessus. Code
-            promo Frichti Market. Le logo et la copie de Gorillas sont protégés
-            par les droits d&apos;auteur de New Frichti SAS. Ce site Web
-            n&apos;est pas affilié à New Frichti SAS.
+            promo Frichti Market. Le logo et la copie de Frichti Market sont
+            protégés par les droits d&apos;auteur de New Frichti SAS. Ce site
+            Web n&apos;est pas affilié à New Frichti SAS.
           </p>
         </footer>
       </body>
