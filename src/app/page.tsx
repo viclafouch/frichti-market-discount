@@ -55,9 +55,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <p className="text-center italic text-black mt-10">
-            Un bandeau noir apparaîtra sur le site vous indiquant que <br /> le
-            bon de <b>{AMOUNT_IN_EUROS}€ a bien été pris en compte</b>.
+          <p className="px-10 text-center italic text-black mt-10">
+            Un bandeau noir apparaîtra sur le site de Frichti Market vous
+            indiquant que <br /> le bon de{' '}
+            <b>{AMOUNT_IN_EUROS}€ a bien été pris en compte</b>.
           </p>
         </div>
       </div>
