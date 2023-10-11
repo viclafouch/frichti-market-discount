@@ -13,7 +13,7 @@ const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <header
           className="absolute top-0 inset-x-0 text-center p-4 bg-gray-100/80"
@@ -24,7 +24,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             Ce site Web n&apos;est pas affilié à New Frichti SAS.
           </p>
         </header>
-        <main className="flex-1 flex flex-col min-h-screen">{children}</main>
+        <main className="flex-1 flex flex-col">{children}</main>
         <footer className="p-4 bg-gray-100">
           <p className="text-center max-w-2xl mx-auto">
             Remise gratuite uniquement valable avec le lien ci-dessus. Code

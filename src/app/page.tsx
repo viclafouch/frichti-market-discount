@@ -5,6 +5,68 @@ import Script from 'next/script'
 const LINK = 'https://www.frichtimarket.com/r/NDQyMDE5'
 const AMOUNT_IN_EUROS = 10
 
+const SECTIONS = [
+  {
+    title: 'Comment utiliser le lien de parrainage et obtenir la promotion ?',
+    description: (
+      <>
+        Cliquez sur le lien de parrainage suivant —{' '}
+        <a className="text-bluelight underline" href={LINK}>
+          {LINK}
+        </a>{' '}
+        — et créez votre compte. Les <b>{AMOUNT_IN_EUROS}€</b> seront appliqués
+        à votre première commande.
+      </>
+    )
+  },
+  {
+    title: 'Combien dois-je dépenser pour utiliser la promotion ?',
+    description: 'Selon la remise, le montant minimum de commande est de 30€.'
+  },
+  {
+    title: 'Où Frichti Market livre ?',
+    description: 'Frichti Market livre en Île-de-France.'
+  },
+  {
+    title: "Quelles sont les heures d'ouverture de Frichti Market ?",
+    description: 'Livraison en 1h30 en moyenne, 7j/7 de 8h à 23h.'
+  },
+  {
+    title: 'Quels sont les frais de livraison sur Frichti Market ?',
+    description:
+      "Les frais de livraison sont d'environ 1.99€ par commande. Ils deviennent gratuit après 50€ d'achat."
+  },
+  {
+    title: 'En savoir plus sur Frichti Market',
+    description: (
+      <>
+        Consultez le{' '}
+        <a
+          href="https://www.frichtimarket.com"
+          className="text-bluelight underline"
+        >
+          site Web de Frichti Market
+        </a>{' '}
+        ou téléchargez l&apos;application sur le{' '}
+        <a
+          className="text-bluelight underline"
+          href="https://itunes.apple.com/fr/app/id6449497817?mt=8"
+        >
+          Apple App Store
+        </a>{' '}
+        ou{' '}
+        <a
+          className="text-bluelight underline"
+          href="https://play.google.com/store/apps/details?id=com.deleev.babat&hl=fr"
+        >
+          Google Play Store
+        </a>
+        .
+      </>
+    )
+  }
+]
+
 const Home = () => {
   return (
     <>
@@ -18,7 +80,7 @@ const Home = () => {
           gtag('config', 'G-GJGLYTKB81');
         `}
       </Script>
-      <div className="flex flex-col justify-center items-center bg-yellow flex-1 bg-frichti-background bg-cover bg-no-repeat bg-center">
+      <div className="min-h-screen flex flex-col justify-center items-center bg-yellow flex-1 bg-frichti-background bg-cover bg-no-repeat bg-center">
         <div>
           <div className="px-10 flex flex-col items-center gap-y-2">
             <Image
@@ -61,6 +123,36 @@ const Home = () => {
             <b>{AMOUNT_IN_EUROS}€ a bien été pris en compte</b>.
           </p>
         </div>
+      </div>
+      <div className="py-10 max-w-screen-md m-auto px-10 flex flex-col items-center gap-y-6">
+        <header>
+          <h2 className="text-4xl font-semibold">
+            Frichti Market Parrainage {new Date().getFullYear()}
+          </h2>
+          <p className="mt-5 mb-5">
+            Obtenez{' '}
+            <b>{AMOUNT_IN_EUROS}€ de réduction sur votre première commande</b>{' '}
+            Frichti Market avec le lien de parrainage suivant :{' '}
+            <a className="text-bluelight underline" href={LINK}>
+              {LINK}
+            </a>
+            . Vous trouverez ci-dessous quelques réponses aux questions les plus
+            importantes sur l&apos;utilisation du lien de parrainage :
+          </p>
+          <hr />
+        </header>
+        <section className="flex flex-col gap-7 pb-5">
+          {SECTIONS.map((section) => {
+            return (
+              <div key={section.title}>
+                <h3 className="text-2xl text-blue font-medium">
+                  {section.title}
+                </h3>
+                <p className="mt-1">{section.description}</p>
+              </div>
+            )
+          })}
+        </section>
       </div>
     </>
   )
