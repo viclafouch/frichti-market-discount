@@ -100,12 +100,12 @@ const Home = () => {
             <div className="w-full max-w-xl mx-auto relative">
               <span className="absolute w-full h-full bg-black" />
               <div className="flex flex-col items-center gap-4 border-black border-solid border bg-white px-6 py-7 z-10 relative right-2 bottom-2">
-                <p className="text-center text-2xl">
-                  <span className="uppercase font-bold">
-                    {AMOUNT_IN_EUROS}€ pour votre 1ère commande
-                  </span>
-                  <br /> en cliquant sur le bouton ci-dessous
-                </p>
+                <div className="text-center text-2xl">
+                  <h1 className="uppercase font-bold">
+                    {AMOUNT_IN_EUROS}€ sur votre 1ère commande
+                  </h1>
+                  en cliquant sur le bouton ci-dessous
+                </div>
                 <a
                   className="text-center bg-black text-white p-4 rounded-full block"
                   href={LINK}
