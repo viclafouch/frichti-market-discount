@@ -11,7 +11,11 @@ const SECTIONS = [
     description: (
       <>
         Cliquez sur le lien de parrainage suivant —{' '}
-        <a className="text-bluelight underline" href={LINK}>
+        <a
+          title="Aller sur Frichti Market"
+          className="text-bluelight underline"
+          href={LINK}
+        >
           {LINK}
         </a>{' '}
         — et créez votre compte. Les <b>{AMOUNT_IN_EUROS}€</b> seront appliqués
@@ -44,12 +48,14 @@ const SECTIONS = [
         <a
           href="https://www.frichtimarket.com"
           className="text-bluelight underline"
+          title="Aller sur Frichti Market"
         >
           site Web de Frichti Market
         </a>{' '}
         ou téléchargez l&apos;application sur le{' '}
         <a
           className="text-bluelight underline"
+          title="Télécharger l'application IOS"
           href="https://itunes.apple.com/fr/app/id6449497817?mt=8"
         >
           Apple App Store
@@ -57,6 +63,7 @@ const SECTIONS = [
         ou{' '}
         <a
           className="text-bluelight underline"
+          title="Télécharger l'application Android"
           href="https://play.google.com/store/apps/details?id=com.deleev.babat&hl=fr"
         >
           Google Play Store
@@ -109,6 +116,7 @@ const Home = () => {
                 <a
                   className="text-center bg-black text-white p-4 rounded-full block"
                   href={LINK}
+                  title="Aller sur Frichti Market"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -133,7 +141,11 @@ const Home = () => {
             Obtenez{' '}
             <b>{AMOUNT_IN_EUROS}€ de réduction sur votre première commande</b>{' '}
             Frichti Market avec le lien de parrainage suivant :{' '}
-            <a className="text-bluelight underline" href={LINK}>
+            <a
+              title="Aller sur Frichti Market"
+              className="text-bluelight underline"
+              href={LINK}
+            >
               {LINK}
             </a>
             . Vous trouverez ci-dessous quelques réponses aux questions les plus
