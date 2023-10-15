@@ -8,7 +8,7 @@ const metadata: Metadata = {
   themeColor: '#faf190',
   title: 'Obtenez 10€ sur votre première commande Frichti Market',
   description:
-    "Offre de 10€ de promotion sur votre 1er achat sur le site Frichti Market · Livraison gratuite dès 50€ d'achat · Parrainage: 10€ offerts."
+    "Offre de 10€ de promotion sur votre 1ère commande sur le site Frichti Market · Livraison gratuite dès 50€ d'achat · Parrainage: 10€ offerts."
 }
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
