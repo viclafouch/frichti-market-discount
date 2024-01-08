@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const metadata: Metadata = {
   themeColor: '#faf190',
-  title: 'Code promo de 10€ offert sur Frichti Market en 2023',
+  title: 'Code promo de 10€ offert sur Frichti Market en 2024',
   description:
     "Offre de 10€ de promotion sur votre 1ère commande sur le site Frichti Market · Livraison gratuite dès 50€ d'achat · Parrainage: 10€ offerts."
 }
