@@ -153,14 +153,32 @@ const Home = () => {
           </p>
           <hr />
         </header>
-        <section className="flex flex-col gap-7 pb-5">
+        <section
+          className="flex flex-col gap-7 pb-5"
+          itemProp="mainEntity"
+          itemScope
+          itemType="https://schema.org/FAQPage"
+        >
           {SECTIONS.map((section) => {
             return (
-              <div key={section.title}>
-                <h3 className="text-2xl text-blue font-medium">
+              <div
+                key={section.title}
+                itemScope
+                itemProp="mainEntity"
+                itemType="https://schema.org/Question"
+              >
+                <h3 className="text-2xl text-blue font-medium" itemProp="name">
                   {section.title}
                 </h3>
-                <p className="mt-1">{section.description}</p>
+                <div
+                  itemScope
+                  itemProp="acceptedAnswer"
+                  itemType="https://schema.org/Answer"
+                >
+                  <p className="mt-1" itemProp="text">
+                    {section.description}
+                  </p>
+                </div>
               </div>
             )
           })}
