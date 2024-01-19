@@ -24,6 +24,15 @@ const SECTIONS = [
     )
   },
   {
+    title: 'Quel est le montant du code promo sur Frichti Market',
+    description: (
+      <>
+        Le montant du code promotionnel disponible gratuitement est de{' '}
+        <b>{AMOUNT_IN_EUROS}€</b>.
+      </>
+    )
+  },
+  {
     title: 'Combien dois-je dépenser pour utiliser la promotion ?',
     description: 'Selon la remise, le montant minimum de commande est de 30€.'
   },
